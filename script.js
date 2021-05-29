@@ -2,27 +2,28 @@
 
 
 window.onload = function(){
-    create_carousel(['assets/img/window_version/writing.png'], "to_insert1");
+    create_carousel(5, "to_insert1");
 
 };
 
-function create_carousel(list_of_images, id_to_insert = null){
+function create_carousel(howmany, id_to_insert = null){
 // Is this function good practice? Hell no. Do I have enough time to do properly? Probably not. 
     let all_text = "<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>\
     <div class='carousel-inner'>\
     "
     let slide_temp, element_to_add
 
-    for (let i = 0; i<list_of_images.length; i++){
+    for (let i = 0; i<howmany; i++){
         if (i == 0){
             slide_temp = "<div class='carousel-item active'>"
         }
         else{
             slide_temp = "<div class='carousel-item'>"
         }
-
         slide_temp += `
-        <img class='d-block w-100' src='${list_of_images[i]}' alt='Second slide'>\
+        <img class='d-block w-100'\
+        src='assets/img/project_images/Amazing_Engine/example_image_${i}.PNG
+        ' alt='Second slide'>\
         </div>\
         `
 
