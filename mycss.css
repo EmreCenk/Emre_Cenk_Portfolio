@@ -18,9 +18,9 @@
 }
 
 .carousel {
-    margin: 0 auto;
-    width:25%;
-    height:0%;
+    margin: 0 auto; 
+    width:75%;
+    padding-bottom:1%;
   }
 
 .carousel-inner img {

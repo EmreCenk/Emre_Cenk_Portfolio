@@ -2,16 +2,16 @@
 
 
 window.onload = function(){
-    create_carousel(['assets/img/portfolio/cabin.png']);
+    create_carousel(['assets/img/window_version/writing.png'], "to_insert1");
 
 };
 
-function create_carousel(list_of_images){
+function create_carousel(list_of_images, id_to_insert = null){
 // Is this function good practice? Hell no. Do I have enough time to do properly? Probably not. 
     let all_text = "<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>\
     <div class='carousel-inner'>\
     "
-    let slide_temp
+    let slide_temp, element_to_add
 
     for (let i = 0; i<list_of_images.length; i++){
         if (i == 0){
@@ -43,5 +43,14 @@ function create_carousel(list_of_images){
     <span class='sr-only'>Next</span>\
   </a>\</div>";
     console.log("yes?", all_text);
-    document.body.innerHTML += all_text;
+
+    if (id_to_insert === null){  
+        element_to_add = document.body
+  
+    }
+    else{
+        element_to_add = document.getElementById(id_to_insert);
+    }
+
+    element_to_add.innerHTML += all_text;
 }
