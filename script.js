@@ -1,5 +1,6 @@
 
 
+var current_id = 0;
 
 window.onload = function(){
     create_carousel(5, "to_insert1");
@@ -8,9 +9,11 @@ window.onload = function(){
 
 function create_carousel(howmany, id_to_insert = null){
 // Is this function good practice? Hell no. Do I have enough time to do properly? Probably not. 
-    let all_text = "<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>\
+
+    let test = ["First", "Second", "Third", "Fourth", "Fifth"]
+    let all_text = `<div id='${"carouselExampleControls"+current_id}' class='carousel slide' data-ride='carousel'>\
     <div class='carousel-inner'>\
-    "
+    `
     let slide_temp, element_to_add
 
     for (let i = 0; i<howmany; i++){
@@ -23,7 +26,7 @@ function create_carousel(howmany, id_to_insert = null){
         slide_temp += `
         <img class='d-block w-100'\
         src='assets/img/project_images/Amazing_Engine/example_image_${i}.PNG
-        ' alt='Second slide'>\
+        ' alt='${test[i]} slide'>\
         </div>\
         `
 
@@ -34,15 +37,15 @@ function create_carousel(howmany, id_to_insert = null){
 
     }
     
-    all_text += "</div>\
-    <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'>\
+    all_text += `\
+    <a class='carousel-control-prev' href='#${"carouselExampleControls"+current_id}' role='button' data-slide='prev'>\
     <span class='carousel-control-prev-icon' aria-hidden='true'></span>\
     <span class='sr-only'>Previous</span>\
   </a>\
-  <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'>\
+  <a class='carousel-control-next' href='#${"carouselExampleControls"+current_id}' role='button' data-slide='next'>\
     <span class='carousel-control-next-icon' aria-hidden='true'></span>\
     <span class='sr-only'>Next</span>\
-  </a>\</div>";
+  </a>\</div>`;
     console.log("yes?", all_text);
 
     if (id_to_insert === null){  
@@ -54,4 +57,6 @@ function create_carousel(howmany, id_to_insert = null){
     }
 
     element_to_add.innerHTML += all_text;
+
+    current_id+=1;
 }
