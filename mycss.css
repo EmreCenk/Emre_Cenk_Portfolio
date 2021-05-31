@@ -29,8 +29,18 @@
     margin: 1.75rem auto;
 }
 
-.carousel-item{
+#landing{
+    padding-top: calc(3rem + 74px);
+    padding-bottom:0;
 
+}
+#my_picture{
+    margin:0;
+    padding:0;
+    border:0;
+    width:25%;
+    height:auto;
+    border-radius: 100%;
 }
 img.d-block.w-100{
     width:100%;
