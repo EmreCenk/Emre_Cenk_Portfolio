@@ -3,11 +3,12 @@
 var current_id = 0;
 
 window.onload = function(){
-    create_carousel(5, "to_insert1");
+    create_carousel(5, "Amazing_Engine", "to_insert1");
+    create_carousel(5, "Amazing_Engine", "to_insert2");
 
 };
 
-function create_carousel(howmany, id_to_insert = null){
+function create_carousel(howmany, folder_name, id_to_insert = null){
 // Is this function good practice? Hell no. Do I have enough time to do properly? Probably not. 
 
     let test = ["First", "Second", "Third", "Fourth", "Fifth"]
@@ -25,7 +26,7 @@ function create_carousel(howmany, id_to_insert = null){
         }
         slide_temp += `
         <img class='d-block w-100'\
-        src='assets/img/project_images/Amazing_Engine/example_image_${i}.PNG
+        src='assets/img/project_images/${folder_name}/example_image_${i}.PNG
         ' alt='${test[i]} slide'>\
         </div>\
         `
