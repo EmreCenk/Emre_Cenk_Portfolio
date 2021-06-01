@@ -76,3 +76,12 @@ img.d-block.w-100{
     }   
     
 }
+
+.center {
+    text-align: center;
+    /* border: 3px solid green; */
+  }
+
+.bigger{
+    font-size: 2rem;
+}
