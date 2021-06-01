@@ -35,14 +35,44 @@
 
 }
 #my_picture{
-    margin:0;
+    float: left;
+    margin-bottom:0px !important;
     padding:0;
     border:0;
     width:25%;
     height:auto;
     border-radius: 100%;
+    
+}
+
+#landing_container{
+    width: 80%;
+}
+
+.btn.btn-outline-light.btn-social.mx-1{
+    border-radius: 100%;
+}
+#picture_divide{
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
+}
+#landing_ending{
+    padding-bottom: 2%;
 }
 img.d-block.w-100{
     width:100%;
     height: auto;
+}
+
+@media only screen and (max-width: 800px){
+
+    #my_picture{
+        margin:0;
+        padding:0;
+        border:0;
+        width:50%;
+        height:auto;
+        border-radius: 100%;
+    }   
+    
 }
