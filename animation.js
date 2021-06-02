@@ -105,7 +105,6 @@ function animate(){
         if (mouse_is_down){
             let original = distance(cur.x,cur.y,mouse_x,mouse_y);
 
-            console.log(cur.x,cur.y);
             if (original<=run_limit){
                 let x_mod = distance(cur.x+cur.vx,cur.y,mouse_x,mouse_y);
                 let y_mod = distance(cur.x,cur.y+cur.vy,mouse_x,mouse_y);

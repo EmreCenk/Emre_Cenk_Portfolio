@@ -87,3 +87,22 @@ img.d-block.w-100{
 }
 
 
+
+#tsparticles {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+#landing_container {
+    position: relative;
+    left:0;
+    top:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+#landing{
+    background-color: rgba(0, 0, 0, 0) !important;
+
+}
