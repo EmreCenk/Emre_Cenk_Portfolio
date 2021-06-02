@@ -61,3 +61,5 @@ function create_carousel(howmany, folder_name, id_to_insert = null){
 
     current_id+=1;
 }
+
+animate();

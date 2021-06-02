@@ -25,7 +25,7 @@
 
 
 .modal-dialog {
-    max-width: 80%;
+    max-width: 100%;
     margin: 1.75rem auto;
 }
 
@@ -87,18 +87,3 @@ img.d-block.w-100{
 }
 
 
-body {
-    margin:0;
-    padding:0;
-}
-canvas{
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:-1;
-}
-div{
-    z-index:0;
-    left:12px;
-    top:10px;
-}
