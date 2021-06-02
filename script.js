@@ -11,7 +11,7 @@ window.onload = function(){
     {
       background: {
         color: {
-          value: "#0d47a1",
+          value: "rgb(26, 188, 156)",
         },
       },
       fpsLimit: 60,
@@ -19,7 +19,7 @@ window.onload = function(){
         detectsOn: "window",
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onHover: {
@@ -39,7 +39,7 @@ window.onload = function(){
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 150,
             duration: 0.4,
           },
         },
