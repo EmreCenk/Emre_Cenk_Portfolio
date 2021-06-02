@@ -85,3 +85,20 @@ img.d-block.w-100{
 .bigger{
     font-size: 2rem;
 }
+
+
+body {
+    margin:0;
+    padding:0;
+}
+canvas{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+div{
+    z-index:0;
+    left:12px;
+    top:10px;
+}
