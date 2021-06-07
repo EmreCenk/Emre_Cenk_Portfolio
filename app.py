@@ -6,7 +6,7 @@ from flask.templating import render_template
 
 website_app = Flask(__name__, template_folder="", static_folder="") #overriding the default directories flask searches for
 
-
+print("app running!")
 
 @website_app.route('/',methods=["POST","GET"])
 def index():
