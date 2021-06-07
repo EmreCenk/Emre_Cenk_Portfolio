@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder="", static_folder="")
 @app.route('/')
 def homepage():
     
-    return render_template()
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
