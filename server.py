@@ -10,10 +10,10 @@ website_app = Flask(__name__, template_folder="", static_folder="") #overriding 
 
 @website_app.route('/',methods=["POST","GET"])
 def index():
-    if request.method == "GET":
-        return render_template("index.html")
+    return render_template("index.html")
     
-    return {"final": "server received"}
-
+@website_app.errorhandler(404)
+def handler(a):
+    return render_template("index.html")
 if __name__ == "__main__":
     website_app.run(debug = True);
