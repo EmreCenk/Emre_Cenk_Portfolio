@@ -4,7 +4,8 @@ var current_id = 0;
 
 window.onload = function(){
     create_carousel(5, "Amazing_Engine", "to_insert1");
-    create_carousel(5, "Amazing_Engine", "to_insert2");
+    // create_carousel(5, "Amazing_Engine", "to_insert2");
+
     $("#tsparticles")
   .particles()
   .init(
@@ -118,7 +119,6 @@ function create_carousel(howmany, folder_name, id_to_insert = null){
         `
 
         all_text += slide_temp
-        console.log("is this happening?")
 
 
 

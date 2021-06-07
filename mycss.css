@@ -106,3 +106,14 @@ img.d-block.w-100{
     background-color: rgba(0, 0, 0, 0) !important;
 
 }
+
+#to_insert2{
+
+}
+#to_insert2 img{
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto!important;
+  padding-bottom: 1%;
+  width: 70% !important;
+}
