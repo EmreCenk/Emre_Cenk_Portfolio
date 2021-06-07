@@ -17,4 +17,4 @@ def handler(a):
     return render_template("index.html")
     
 if __name__ == "__main__":
-    website_app.run(debug = True);
+    website_app.run(debug = False);
