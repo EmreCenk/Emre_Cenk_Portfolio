@@ -133,7 +133,6 @@ function create_carousel(howmany, folder_name, id_to_insert = null){
     <span class='carousel-control-next-icon' aria-hidden='true'></span>\
     <span class='sr-only'>Next</span>\
   </a>\</div>`;
-    console.log("yes?", all_text);
 
     if (id_to_insert === null){  
         element_to_add = document.body
@@ -148,4 +147,4 @@ function create_carousel(howmany, folder_name, id_to_insert = null){
     current_id+=1;
 }
 
-animate();
+// animate();
