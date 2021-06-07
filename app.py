@@ -12,9 +12,10 @@ print("app running!")
 def index():
     return render_template("index.html")
     
-@website_app.errorhandler(404)
-def handler(a):
-    return render_template("index.html")
+# @website_app.errorhandler(404)
+# def handler(a):
+#     return render_template("index.html")
     
 if __name__ == "__main__":
+    print("here.")
     website_app.run(debug = False);
