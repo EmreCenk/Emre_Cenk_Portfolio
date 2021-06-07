@@ -1,6 +1,6 @@
 
 from flask import Flask,render_template, request
-
+import os
 from flask.templating import render_template
 
 
@@ -17,5 +17,6 @@ def index():
 #     return render_template("index.html")
 
 print("a")
-website_app.run(debug = False);
+website_app.run(host=os.getenv('IP', '0.0.0.0'), 
+            port=int(os.getenv('PORT', 4444)))
 print("beta")
