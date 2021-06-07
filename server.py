@@ -15,5 +15,6 @@ def index():
 @website_app.errorhandler(404)
 def handler(a):
     return render_template("index.html")
+    
 if __name__ == "__main__":
     website_app.run(debug = True);
