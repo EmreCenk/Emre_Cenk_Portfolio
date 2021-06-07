@@ -17,6 +17,5 @@ def index():
 #     return render_template("index.html")
 
 print("a")
-if __name__ == "__main__":
-    print("here.")
-    website_app.run(debug = False);
+website_app.run(debug = False);
+print("beta")
